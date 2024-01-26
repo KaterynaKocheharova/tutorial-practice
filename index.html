@@ -10,6 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap"
       rel="stylesheet"
     />
@@ -18,31 +25,51 @@
   </head>
   <body>
     <!-- HEADER -->
-<header class="header" id="header">
-    <nav class="page-nav">
-        <a href="" class="logo"></a>
+    <header class="header" id="header">
+      <nav class="page-nav container">
+        <a href="index.html" class="nav-logo"
+          ><i class="bx bxs-shopping-bags nav-logo-icon"></i
+        ></a>
         <ul class="nav-list">
-           <li class="nav-item"><a href="index.html" class="nav-link active-link">Home</a></li>
-           <li class="nav-item"><a href="catalog.html" class="nav-link">Catalog</a></li>
-           <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
-           <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-           <li class="nav-item"><a href="faq.html" class="nav-link">Faq's</a></li>
-           <li class="nav-item"><a href="contacts.html" class="nav-link">Contacts</a></li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active-link">Головна</a>
+          </li>
+          <li class="nav-item">
+            <a href="catalog.html" class="nav-link">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a href="cart.html" class="nav-link">Кошик</a>
+          </li>
+          <li class="nav-item">
+            <a href="faq.html" class="nav-link">Часті запитання</a>
+          </li>
+          <li class="nav-item">
+            <a href="contacts.html" class="nav-link">Контакти</a>
+          </li>
         </ul>
-    </nav>
-</header>
-<!-- CART -->
-<section class="cart" id="cart"></section>
-<!-- LOGIN -->
-<section class="login" id="login"></section>
+        <div class="nav-btns">
+          <div class="login-toggle" id="login-toggle">
+            <i class="bx bx-user"></i>
+          </div>
+          <div class="nav-shop" id="cart-shop">
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+          <div class="nav-toggle" id="nav-toggle">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- CART -->
+    <section class="cart" id="cart"></section>
+    <!-- LOGIN -->
+    <section class="login" id="login"></section>
 
-<!-- MAIN -->
-<main class="main">
-    <!-- HOME -->
-    <section class="home container"></section>
-</main>
-
-
+    <!-- MAIN -->
+    <main class="main">
+      <!-- HOME -->
+      <section class="home container"></section>
+    </main>
 
     <script src="
 https://cdn.jsdelivr.net/npm/boxicons@2.1.4/dist/boxicons.min.js

@@ -1,11 +1,11 @@
-/* ====================================================== VARIABLES ======================================= */
-
 :root {
-  --primary-background-color: #f5f5f0; 
+  --primary-background-color: #f5f5f0;
+  --header-background-color: rgba(0, 0, 0, 0.8);
   /* --secondary-background-color: #2ecc71; */
   /* --primary-color: */
   /* --secondary-color: */
   --primary-font-family: 'Poppins', sans-serif;
+  --box-shadow:  rgba(0, 0, 0, 0.9) 0px 18px 50px -10px;
 }
 
 /* ==================================================== GENERAL STYLES ==================================== */
@@ -63,21 +63,20 @@ body {
     max-width: 100%;
   }
   
-  .container {
-    max-width: 320px;
-    padding: 0 16px;
-    margin: 0 auto;
-  }
-  
-  @media (min-width: 768px) {
-    .container {
-      max-width: 768px;
-    }
-  }
-  
-  @media (min-width: 1154px) {
-    .container {
-      max-width: 1158px;
-      padding: 0 15px;
-    }
-  }
+/* ============================================ LAYOUT ===================================================== */
+
+/* CONTAINER IN %? PADDINGS IN %? */
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+}
+
+/* ========================================= HEADER SECTION ================================================ */
+
+.header {
+background-color: var(--header-background-color);
+box-shadow: var(--box-shadow);
+}
