@@ -1,0 +1,18 @@
+:root {
+  /* =========================================== HEIGHTS ================================================ */
+
+  --header-height: 3.5rem;
+
+  /* =========================================== COLORS ================================================= */
+
+  --primary-background-color: #f5f5f0;
+  --header-background-color: rgba(0, 0, 0, 0.8);
+  --primary-font-family: 'Poppins', sans-serif;
+  --box-shadow: rgba(0, 0, 0, 0.9) 0px 18px 50px -10px;
+  --z-fixed: 9999;
+  --header-link: black;
+  --header-link-hover: #f5f5f0;
+
+  /* ============================================ FONTS ================================================ */
+  --font-medium: 500;
+}
