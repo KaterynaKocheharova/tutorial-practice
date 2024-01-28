@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/variables.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap"
       rel="stylesheet"
@@ -29,8 +29,8 @@
     <header class="header" id="header">
       <nav class="page-nav container">
         <a href="index.html" class="nav-logo"
-          ><i class="bx bxs-shopping-bags nav-logo-icon"></i
-        >e-shopper</a>
+          ><i class="bx bxs-shopping-bags nav-logo-icon"></i>e-shopper</a
+        >
         <ul class="nav-list">
           <li class="nav-item">
             <a href="index.html" class="nav-link active-link">Головна</a>
@@ -61,8 +61,85 @@
         </div>
       </nav>
     </header>
-    <!-- CART -->
-    <section class="cart" id="cart"></section>
+
+    <!-- =================================================== CART ============================================= -->
+    <!-- ??? change some tags later??? -->
+
+    <div class="cart" id="cart">
+      <i class='bx bx-window-close cart-close'></i>
+      <h2 class="cart-title">My cart</h2>
+      <div class="cart-container">
+
+        <article class="cart-card">
+          <div class="cart-image-container">
+            <img src="./img/1.webp" alt="" width="500" />
+          </div>
+          <div class="cart-details">
+            <h3 class="cart-details-title">Гаманець</h3>
+            <span class="cart-price">100грн</span>
+            <div class="cart-amount">
+              <div class="cart-amount-content">
+                <span class="cart-amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+                <span class="cart-amount-number">1</span>
+                <span class="cart-amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+              <i class="bx bx-trash-alt cart-amount-trash"></i>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="cart-card">
+          <div class="cart-image-container">
+            <img src="./img/1.webp" alt=""/>
+          </div>
+          <div class="cart-details">
+            <h3 class="cart-details-title">Гаманець</h3>
+            <span class="cart-price">100грн</span>
+            <div class="cart-amount">
+              <div class="cart-amount-content">
+                <span class="cart-amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+                <span class="cart-amount-number">1</span>
+                <span class="cart-amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+              <i class="bx bx-trash-alt cart-amount-trash"></i>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="cart-card">
+          <div class="cart-image-container">
+            <img src="./img/1.webp" alt="" width="500" />
+          </div>
+          <div class="cart-details">
+            <h3 class="cart-details-title">Гаманець</h3>
+            <span class="cart-price">100грн</span>
+            <div class="cart-amount">
+              <div class="cart-amount-content">
+                <span class="cart-amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+                <span class="cart-amount-number">1</span>
+                <span class="cart-amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+              <i class="bx bx-trash-alt cart-amount-trash"></i>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
     <!-- LOGIN -->
     <section class="login" id="login"></section>
 
