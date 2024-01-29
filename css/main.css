@@ -1,9 +1,5 @@
-/* ==================================================== GENERAL STYLES ==================================== */
 
-body {
-  font-family: var(--primary-font-family);
-  background-color: var(--primary-background-color);
-}
+/* ==================================================== SOME RESET ======================================================= */
 
 ul {
   list-style-type: none;
@@ -17,17 +13,9 @@ button {
   cursor: pointer;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+button, input {
+  border: none;
+  outline: none;
 }
 
 h1,
@@ -53,169 +41,30 @@ img {
   max-width: 100%;
 }
 
-/* ============================================ LAYOUT ===================================================== */
+/* ============================================== BASE AND COMMON STYLES ============================================= */
 
-/* CONTAINER IN %? PADDINGS IN %? */
-.container {
-  max-width: 968px;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
-  /* padding-left: 10px;
-  padding-right: 10px; */
+html {
+  scroll-behavior: smooth;
 }
 
-.grid {
-  display: grid;
+body, button, input {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
 }
 
-/* ========================================= HEADER SECTION ================================================ */
-
-.header {
-  /* position: fixed;
-  top: 0;
-  left: 0; */
-  width: 100%;
-  /* background-color: var(--main-background-accent-color); */
-  background-color: transparent;
-  /* box-shadow: var(--box-shadow); */
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
 }
 
-/* =========================================== NAVIGATION ================================================== */
-
-.page-nav {
-  display: flex;
-  height: calc(var(--header-height) + 1.5rem);
-  justify-content: flex-start;
-  align-items: center;
-  column-gap: 3rem;
-}
-
-.nav-logo,
-.login-toggle,
-.nav-shop,
-.nav-toggle {
+h1, h2, h3 {
   color: var(--title-color);
-}
-
-.nav-logo {
-  /* text-transform: lowercase; */
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 0.25rem;
-  font-weight: var(--font-bold);
-  letter-spacing: 1px;
-}
-
-.nav-logo-icon {
-  font-size: 1.25rem;
-}
-
-.nav-btns {
-  display: flex;
-  /* align-items: center; */
-  column-gap: 1rem;
-  margin-inline-start: auto;
-}
-
-.login-toggle,
-.nav-shop,
-.nav-toggle {
-  font-size: 1.25rem;
-  cursor: pointer;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
-  column-gap: 2rem;
-}
-
-.nav-link {
-  color: var(--title-color);
-  transition: color 250ms linear;
-}
-
-.nav-link:hover {
-  color:var(--header-link-hover);
-}
-
-.nav-toggle {
-  display: none;
-}
-
-/* ============================================ ACTIVE LINK =========================================== */
-
-.active-link {
-  position: relative;
-}
-
-.active-link::after {
-content: "";
-position: absolute;
-bottom: -.75rem;
-left: 45%;
-width: 5px;
-height: 5px;
-background-color: black;
-border-radius: 50%;
-}
-
-/* =================================================== CART =================================================== */
-
-.cart {
-  position: fixed;
-  z-index: 999;
-  width: 20%;
-  height: 100%;
-  box-shadow: var(--box-shadow);
-  top: 0;
-  right: 0;
-  padding: 3.5rem 2rem;
-}
-
-.cart-close {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  font-size: 1.5rem;
-  color:var(--main-background-accent-color);
-  cursor: pointer;
-}
-
-.cart-title {
-  text-align: center;
   font-weight: var(--font-medium);
-  margin-bottom: 1.5rem;
 }
 
-.cart-container {
-}
-.cart-card {
-}
-.cart-image-container {
-}
-.cart-details {
-}
-.cart-details-title {
-}
-.cart-price {
-}
-.cart-amount {
-}
-.cart-amount-content {
-}
-.cart-amount-box {
-}
-.bx {
-}
-.bx-minus {
-}
-.cart-amount-number {
-}
-.bx-plus {
-}
-.bx-trash-alt {
-}
-.cart-amount-trash {
+
+/* ============================================ REUSABLE CSS CLASSES ===================================================== */
+
+.section {
+  padding: 7rem 0 2rem;
 }
