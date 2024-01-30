@@ -1,5 +1,78 @@
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap");
+
+/* ============================================= VARIABLES ================================= */
+:root {
+  --header-height: 3.5rem;
+
+  /* =========================================== MAIN COLORS ================================ */
+
+--title-color: hsl(250, 8%, 15%);
+--text-color: hsl(250, 8%, 35%);
+--body-color: #f5f5f0;
+--container-color: #fff;
+--shadow: rgba(0, 0, 0, 0.8) 0px 18px 50px -10px;
+/* --shadow: hsla(0, 0%, 15%, .1) */
+
+/* ========================================== OTHER COLORS ================================== */
+
+--hue: 0;
+--first-color: hsl(var(--hue), 88%, 61%);
+--first-color-alt:  hsl(var(--hue), 88%, 58%);
+
+  /* ==================================== FONTS AND TYPOGRAPHY ================================= */
+
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 4rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .875rem;
+  --smaller-font-size: .813rem;
+
+  /* ====================================== FONT WEIGHT ======================================= */
+
+  --font-medium: 500;
+  --font-bold: 660;
+
+/* ======================================= MARGINS-BOTTOM ===================================== */
+
+--mb-0-5: .5rem;
+--mb-0-75: .75rem;
+--mb-1: 1rem;
+--mb-1-5: 1.5rem;
+--mb-2: 2rem;
+--mb-2-5: 2.5rem;
+--mb-3: 3rem;
+
+/* ========================================== Z-INDEX ========================================= */
+
+--z-tooltip: 10;
+--z-fixed: 100;
+}
+
+/* ==================================== RESPONSIVE TYPOGRAPHY ================================== */
+
+@media screen and(max-width: 992px) {
+  :root {
+    --biggest-font-size: 2rem;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+  }
+}
+
 /* ==================================================== SOME RESET ======================================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 ul {
   list-style-type: none;
@@ -68,3 +141,56 @@ h1, h2, h3 {
 .section {
   padding: 7rem 0 2rem;
 }
+
+.section-title,
+.breadcrumb-title {
+  font-size: var(--h1-font-size);
+}
+
+.section-title,
+.breadcrumb-subtitle {
+  margin-bottom: var(--mb-3);
+}
+
+.section-title,
+.breadcrumb-title,
+.breadcrumb-subtitle {
+  text-align: center;
+}
+
+/* ===================================================== LAYOUT ========================================== */
+
+.container {
+  max-width: 968px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.grid {
+  display: grid;
+}
+
+/* ============================================== HEADER SECTION ========================================= */
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-index);
+  background-color: var(--container-color);
+}
+
+/* ================================================= NAV =================================================== */
+
+/* maybe make a separate container - what if we'll be adding new elements not children of nav??? */
+.page-nav {
+  /* maybe form the height with paddings of links ??? */
+  height: calc(var(--header-height) + 1.5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* It doesn't have an effect. why? */
+  column-gap: 3rem;
+}
+
