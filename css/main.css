@@ -1,5 +1,4 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
 
 /* ============================================= VARIABLES ================================= */
 :root {
@@ -7,18 +6,18 @@
 
   /* =========================================== MAIN COLORS ================================ */
 
---title-color: hsl(250, 8%, 15%);
---text-color: hsl(250, 8%, 35%);
---body-color: #f5f5f0;
---container-color: #fff;
---shadow: rgba(0, 0, 0, 0.8) 0px 18px 50px -10px;
-/* --shadow: hsla(0, 0%, 15%, .1) */
+  --title-color: hsl(250, 8%, 15%);
+  --text-color: hsl(250, 8%, 35%);
+  --body-color: #f5f5f0;
+  --container-color: #fff;
+  --shadow: rgba(0, 0, 0, 0.8) 0px 18px 50px -10px;
+  /* --shadow: hsla(0, 0%, 15%, .1) */
 
-/* ========================================== OTHER COLORS ================================== */
+  /* ========================================== OTHER COLORS ================================== */
 
---hue: 0;
---first-color: hsl(var(--hue), 88%, 61%);
---first-color-alt:  hsl(var(--hue), 88%, 58%);
+  --hue: 0;
+  --first-color: hsl(var(--hue), 88%, 61%);
+  --first-color-alt: hsl(var(--hue), 88%, 58%);
 
   /* ==================================== FONTS AND TYPOGRAPHY ================================= */
 
@@ -28,28 +27,28 @@
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
   --normal-font-size: 1rem;
-  --small-font-size: .875rem;
-  --smaller-font-size: .813rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
 
   /* ====================================== FONT WEIGHT ======================================= */
 
   --font-medium: 500;
-  --font-bold: 660;
+  --font-bold: 600;
 
-/* ======================================= MARGINS-BOTTOM ===================================== */
+  /* ======================================= MARGINS-BOTTOM ===================================== */
 
---mb-0-5: .5rem;
---mb-0-75: .75rem;
---mb-1: 1rem;
---mb-1-5: 1.5rem;
---mb-2: 2rem;
---mb-2-5: 2.5rem;
---mb-3: 3rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
 
-/* ========================================== Z-INDEX ========================================= */
+  /* ========================================== Z-INDEX ========================================= */
 
---z-tooltip: 10;
---z-fixed: 100;
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
 
 /* ==================================== RESPONSIVE TYPOGRAPHY ================================== */
@@ -60,9 +59,9 @@
     --h1-font-size: 2.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
   }
 }
 
@@ -86,7 +85,8 @@ button {
   cursor: pointer;
 }
 
-button, input {
+button,
+input {
   border: none;
   outline: none;
 }
@@ -120,7 +120,9 @@ html {
   scroll-behavior: smooth;
 }
 
-body, button, input {
+body,
+button,
+input {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
@@ -130,11 +132,12 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
-
 
 /* ============================================ REUSABLE CSS CLASSES ===================================================== */
 
@@ -178,7 +181,8 @@ h1, h2, h3 {
   top: 0;
   left: 0;
   z-index: var(--z-index);
-  background-color: var(--container-color);
+  /* does it have an effect? */
+  background-color: transparent;
 }
 
 /* ================================================= NAV =================================================== */
@@ -194,3 +198,121 @@ h1, h2, h3 {
   column-gap: 3rem;
 }
 
+.login-toggle,
+.nav-shop,
+.nav-toggle,
+.nav-logo {
+  color: var(--title-color);
+}
+
+.nav-logo {
+  /* why need it? */
+  text-transform: lowercase;
+  font-weight: var(--font-bold);
+  letter-spacing: 1px;
+  /* why inline */
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+.nav-logo-icon {
+  font-size: 1.25rem;
+}
+
+.nav-btns {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  margin-inline-start: auto;
+}
+
+.nav-shop,
+.nav-toggle,
+.login-toggle {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.nav-list {
+  display: flex;
+  /* No effect */
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.nav-link {
+  color: var(--title-color);
+  /* properties below don't work */
+  font-weight: var(--font-medium);
+  font-size: var(--normal-font-size);
+  transition: color 250ms linear;
+}
+
+.nav-link:hover {
+  color: var(--first-color);
+}
+
+.nav-toggle {
+  display: none;
+}
+
+/* ============================================== ACTIVE LINK ============================================== */
+
+.active-link {
+  position: relative;
+}
+
+.active-link::before {
+  content: "";
+  position: absolute;
+  bottom: -.75rem;
+  left: 45%;
+  width: 5px;
+  height: 5px;
+  background-color: var(--title-color);
+  border-radius: 50%;
+}
+
+/* =========================================== CART STYLES =================================================== */
+
+.cart {
+}
+.bx-bx-x {
+}
+.cart-close {
+}
+.cart-title-center {
+}
+.cart-container {
+}
+.cart-card {
+}
+.cart-image-container {
+}
+.cart-image {
+}
+.cart-details {
+}
+.cart-details-title {
+}
+.cart-price {
+}
+.cart-amount {
+}
+.cart-amount-content {
+}
+.cart-amount-box {
+}
+.bx {
+}
+.bx-minus {
+}
+.cart-amount-number {
+}
+.bx-plus {
+}
+.bx-trash-alt {
+}
+.cart-amount-trash {
+}
