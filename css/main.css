@@ -161,7 +161,7 @@ h3 {
   text-align: center;
 }
 
-/* ===================================================== LAYOUT ========================================== */
+/* ================================================== LAYOUT ========================================== */
 
 .container {
   max-width: 968px;
@@ -173,6 +173,25 @@ h3 {
   display: grid;
 }
 
+/* ================================================== BUTTONS =========================================== */
+
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem 1.75rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+  transition: background-color 250ms linear;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  background-color: #fff;
+  color: var(--first-color);
+
+}
 /* ============================================== HEADER SECTION ========================================= */
 
 .header {
@@ -406,7 +425,7 @@ column-gap: 3rem;
   width: 420px;
   height: 100%;
   top: 0;
-  right: 0;
+  right: -100%;
   background-color: var(--body-color);
   box-shadow: var(--shadow);
   padding: 3.5rem 2rem;
@@ -433,5 +452,37 @@ column-gap: 3rem;
 }
 
 .login-content {
-  
+  background: var(--container-color);
+  border-radius: .5rem;
+  padding: .75rem 1rem .25rem;
+}
+
+.login-label {
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+}
+
+.login-input {
+  width: 100%;
+  /* why need it if content has it now */
+  background-color: var(--container-color);
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+  padding: .25rem .5rem .5rem 0;
+}
+
+.sign-up {
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.sign-up a {
+  color: var(--first-color);
+}
+
+/* SHOW LOGIN */
+
+.show-login {
+  right: 0;
 }
