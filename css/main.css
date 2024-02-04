@@ -276,6 +276,7 @@ h3 {
 
 /* =========================================== CART STYLES =================================================== */
 
+/* ??? what is it */
 .close-btn {
   color: var(--title-color);
   font-size: 1.25rem;
@@ -287,10 +288,11 @@ h3 {
   width: 420px;
   height: 100%;
   top: 0;
-  right: 0;
+  right: -100%;
   background-color: var(--body-color);
   box-shadow: var(--shadow);
   padding: 3.5rem 2rem;
+  transition: right 250ms linear;
 }
 
 .cart-title-center {
@@ -326,11 +328,11 @@ h3 {
   padding: 0.75rem 1.25rem;
   background-color: var(--container-color);
 }
+
 .cart-image {
   width: 85px;
 }
-.cart-details {
-}
+
 .cart-details-title {
   font-size: var(--normal-font-size);
   margin-block-end: var(--mb-0-5);
@@ -362,16 +364,7 @@ column-gap: 3rem;
   background-color: var(--container-color);
   cursor: pointer;
 }
-.bx {
-}
-.bx-minus {
-}
-.cart-amount-number {
-}
-.bx-plus {
-}
-.bx-trash-alt {
-}
+
 .cart-amount-trash {
   font-size: 1.15rem;
   color:var(--first-color);
@@ -384,7 +377,61 @@ column-gap: 3rem;
   align-items: center;
   justify-content: space-between;
 }
-.cart-prices-item {
-}
+.cart-prices-item,
 .cart-prices-total {
+  color: var(--title-color);
+}
+
+.cart-prices-item {
+  font-size: var(--small-font-size);
+} 
+
+.cart-prices-total {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+/* =================================================== SHOW CART ============================================== */
+
+.show-cart {
+  right: 0;
+}
+
+/* ==================================================== LOGIN ================================================= */
+
+/* ???  Maybe the same classes rather than repeat styles ??? */
+.login {
+  position: fixed;
+  z-index: var(--z-fixed);
+  width: 420px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: var(--body-color);
+  box-shadow: var(--shadow);
+  padding: 3.5rem 2rem;
+  transition: right 250ms linear;
+}
+
+.login-title-center {
+  font-size: var(--h2-font-size);
+  text-align: center;
+  margin-block-end: var(--mb-3);
+}
+
+.login-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 0.9rem;
+  color: var(--title-color);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.login-form {
+  row-gap: 1.5rem;
+}
+
+.login-content {
+  
 }
