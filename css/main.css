@@ -486,3 +486,75 @@ column-gap: 3rem;
 .show-login {
   right: 0;
 }
+
+/* ================================================= HOME ============================================== */
+
+.home {
+}
+.container {
+}
+.swiper {
+}
+.home-swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+
+.home-content {
+  padding: 9rem 0 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+}
+
+.home-group {
+  display: grid;
+  position: relative;
+  /* ??? why need it??? */
+  padding-top: 2rem;
+}
+
+/* why set height to the image, not create a container to hold it??? */
+.home-image {
+height: 420px;
+/* ??? why need it??? */
+transform: translateY(-3rem);
+justify-self: center;
+}
+
+.home-indicator {
+  position: absolute;
+  bottom: 15%;
+  left: 45%;
+  width: 8px;
+  height: 8px;
+  background: var(--title-color);
+  border-radius: 50%;
+}
+
+.home-indicator::after {
+content: "";
+position: absolute;
+top: 0;
+right: 45%;
+width: 1px;
+height: 75px;
+background-color: var(--title-color);
+}
+
+
+.home-img-details {
+}
+.home-details-title {
+}
+.details-subtitle {
+}
+.home-data {
+}
+.home-subtitle {
+}
+.home-title {
+}
+.home-description {
+}
