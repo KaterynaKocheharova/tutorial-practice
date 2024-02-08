@@ -525,7 +525,8 @@ justify-self: center;
 
 .home-indicator {
   position: absolute;
-  bottom: 15%;
+  /* bottom: 15%; */
+  bottom: 8%;
   left: 45%;
   width: 8px;
   height: 8px;
@@ -543,18 +544,43 @@ height: 75px;
 background-color: var(--title-color);
 }
 
-
 .home-img-details {
+  position: absolute;
+  bottom: 0;
+  right: 58%;
 }
+
 .home-details-title {
+  font-weight: var(--font-medium);
 }
+
+.home-details-title,
 .details-subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  text-align: right;
 }
+
+.home-subtitle {
+  font-size: var(--h3-font-size);
+  text-transform: uppercase;
+  margin-bottom: var(--mb-1);
+}
+
+.home-title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  line-height: 109%;
+  margin-bottom: var(--mb-1-5);
+}
+
+.home-description {
+  margin-bottom: var(--mb-2-5);
+  padding-right: 2rem;
+}
+
+
 .home-data {
 }
-.home-subtitle {
-}
-.home-title {
-}
-.home-description {
-}
+
+
