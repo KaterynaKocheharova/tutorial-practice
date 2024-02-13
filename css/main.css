@@ -201,6 +201,7 @@ h3 {
 }
 
 .button--flex {
+  /* ??? why inline-flex, not just flex??? */
   display: inline-flex;
   align-items: center;
   column-gap: 0.5rem;
@@ -596,4 +597,5 @@ h3 {
 .home-btns {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
