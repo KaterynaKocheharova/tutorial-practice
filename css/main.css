@@ -180,7 +180,7 @@ h3 {
   background-color: var(--first-color);
   color: #fff;
   padding: 1rem 1.75rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-weight: var(--font-medium);
   transition: background-color 250ms linear;
 }
@@ -190,8 +190,22 @@ h3 {
 .button:focus {
   background-color: #fff;
   color: var(--first-color);
-
 }
+
+.button-icon {
+  font-size: 1.25rem;
+}
+
+.button--link {
+  color: var(--title-color);
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
 /* ============================================== HEADER SECTION ========================================= */
 
 .header {
@@ -370,7 +384,7 @@ h3 {
 }
 
 .cart-amount {
-column-gap: 3rem;
+  column-gap: 3rem;
 }
 
 .cart-amount-content {
@@ -379,14 +393,14 @@ column-gap: 3rem;
 
 .cart-amount-box {
   display: inline-flex;
-  padding: .25rem;
+  padding: 0.25rem;
   background-color: var(--container-color);
   cursor: pointer;
 }
 
 .cart-amount-trash {
   font-size: 1.15rem;
-  color:var(--first-color);
+  color: var(--first-color);
   cursor: pointer;
 }
 
@@ -403,7 +417,7 @@ column-gap: 3rem;
 
 .cart-prices-item {
   font-size: var(--small-font-size);
-} 
+}
 
 .cart-prices-total {
   font-size: var(--h3-font-size);
@@ -453,8 +467,8 @@ column-gap: 3rem;
 
 .login-content {
   background: var(--container-color);
-  border-radius: .5rem;
-  padding: .75rem 1rem .25rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem 0.25rem;
 }
 
 .login-label {
@@ -468,7 +482,7 @@ column-gap: 3rem;
   background-color: var(--container-color);
   color: var(--text-color);
   font-size: var(--normal-font-size);
-  padding: .25rem .5rem .5rem 0;
+  padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
 .sign-up {
@@ -517,10 +531,10 @@ column-gap: 3rem;
 
 /* why set height to the image, not create a container to hold it??? */
 .home-image {
-height: 420px;
-/* ??? why need it??? */
-transform: translateY(-3rem);
-justify-self: center;
+  height: 420px;
+  /* ??? why need it??? */
+  transform: translateY(-3rem);
+  justify-self: center;
 }
 
 .home-indicator {
@@ -535,13 +549,13 @@ justify-self: center;
 }
 
 .home-indicator::after {
-content: "";
-position: absolute;
-top: 0;
-right: 45%;
-width: 1px;
-height: 75px;
-background-color: var(--title-color);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 45%;
+  width: 1px;
+  height: 75px;
+  background-color: var(--title-color);
 }
 
 .home-img-details {
@@ -579,8 +593,7 @@ background-color: var(--title-color);
   padding-right: 2rem;
 }
 
-
-.home-data {
+.home-btns {
+  display: flex;
+  justify-content: space-between;
 }
-
-
