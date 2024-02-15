@@ -505,19 +505,6 @@ h4 {
 
 /* ================================================= HOME ============================================== */
 
-.home {
-}
-.container {
-}
-.swiper {
-}
-.home-swiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-
 .home-content {
   padding: 9rem 0 2rem;
   grid-template-columns: repeat(2, 1fr);
@@ -600,3 +587,5 @@ h4 {
   justify-content: space-between;
   align-items: center;
 }
+
+/* ======================================== SWIPER ======================================== */
