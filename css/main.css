@@ -240,7 +240,7 @@ h4 {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: var(--z-index);
+  z-index: var(--z-fixed);
   /* does it have an effect? */
   background-color: transparent;
 }
@@ -315,6 +315,13 @@ h4 {
 
 .nav-toggle {
   display: none;
+}
+
+/* ======================================== CHANGE BACKGROUND HEADER ======================================= */
+
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: var(--shadow);
 }
 
 /* ============================================== ACTIVE LINK ============================================== */
