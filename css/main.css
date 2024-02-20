@@ -621,3 +621,22 @@ h4 {
 }
 
 /* ======================================== SWIPER ======================================== */
+
+/* ==================================== DISCOUNT SECTION ================================== */
+
+.discount-container {
+  grid-template-columns: repeat(2, max-content);
+}
+
+.container {
+}
+.grid {
+}
+.discount-image {
+}
+.discount-data {
+}
+.discount-title {
+}
+.button {
+}
