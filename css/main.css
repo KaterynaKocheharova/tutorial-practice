@@ -626,17 +626,27 @@ h4 {
 
 .discount-container {
   grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  align-items: center;
+  column-gap: 3rem;
+  background-color: var(--container-color);
+  padding: 3rem 0;
+  border-radius: 3rem;
 }
 
-.container {
-}
-.grid {
-}
 .discount-image {
+  width: 200px;
 }
+
 .discount-data {
+  padding-left: 6rem;
+  text-align: center;
 }
+
 .discount-title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-2);
+
 }
-.button {
-}
+
+
