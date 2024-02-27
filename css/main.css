@@ -650,4 +650,50 @@ h4 {
 
 /* ======================================= NEW ARRIVALS SECTION =============================================== */
 
-
+.new-container {
+  padding-top: 2rem;
+}
+.new-content {
+  position: relative;
+  background-color: var(--container-color);
+  width: 310px;
+  padding: 2rem 0;
+  border-radius: 1rem;
+  text-align: center;
+}
+.new-tag {
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  background-color: var(--first-color);
+  color: #fff;
+  font-size: var(--small-font-size);
+  padding: .25rem .5rem;
+  border-radius: .25rem;
+}
+.new-image {
+  width: 150px;
+  margin-bottom: var(--mb-1);
+  margin-right: auto;
+  margin-left: auto;
+}
+.new-title {
+}
+.new-subtitle {
+}
+.new-prices {
+}
+.new-price {
+}
+.new-dicount {
+}
+.button {
+}
+.new-button {
+}
+.bx {
+}
+.bx-cart-alt {
+}
+.new-icon {
+}
