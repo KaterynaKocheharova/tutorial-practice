@@ -677,17 +677,42 @@ h4 {
   margin-right: auto;
   margin-left: auto;
 }
+
 .new-title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
 }
+
 .new-subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
 }
+
 .new-prices {
+  display: inline-flex;
+  column-gap: .5rem;
 }
+
 .new-price {
+  font-size: var(--font-medium);
+  font-weight: var(--font-medium);
 }
-.new-dicount {
+
+.old-price {
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  text-decoration: line-through;
+  font-weight: var(--font-medium);
 }
+
 .button {
+  display: inline-flex;
+  padding: .5rem;
+  border-radius: .25rem .25rem .75rem .25rem;
+  position: absolute;
+  bottom: 0;
+  right: -3rem;
 }
 .new-button {
 }
