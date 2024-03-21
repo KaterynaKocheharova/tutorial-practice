@@ -1,4 +1,4 @@
-// =========================================== HOME SWIPER ===================================================
+// =========================================== HOME SWIPER =================================================
 
 const swiper = new Swiper('.home-swiper', {
   // ??? what is it
@@ -10,7 +10,17 @@ const swiper = new Swiper('.home-swiper', {
   },
 });
 
-// ===================================== CHANGE BACKGROUND HEADER ===========================================
+// =========================================== NEW SWIPER ==================================================
+
+const newSwiper = new Swiper('.new-swiper', {
+  spaceBetween: 16,
+  slidesPerView: "auto",
+  centeredSlide: true,
+  loop: true,
+
+});
+
+// ===================================== CHANGE BACKGROUND HEADER ==========================================
 
 function scrollHeader() {
   const header = document.querySelector('header');
